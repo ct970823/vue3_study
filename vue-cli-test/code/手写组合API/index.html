@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手写组合API</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <script>
+        // const proxyUser1 = shallowReactive({
+        //         name: '小明',
+        //         age: 18,
+        //         wife: {
+        //             name: '小红',
+        //             age: 17
+        //         }
+        //     })
+        //     // console.log(proxyUser1.name);
+        //     // proxyUser1.age = 19
+        //     // delete proxyUser1.age
+        //     // 浅劫持 只劫持到读取，没有拦截到修改
+        // proxyUser1.wife.name += '==';
+        // const proxyUser2 = reactive({
+        //         name: '小明',
+        //         age: 18,
+        //         wife: {
+        //             name: '小红',
+        //             age: 17
+        //         }
+        //     })
+        // proxyUser2.name += '=='
+        // 深度劫持 读修改删都拦截到了
+        // proxyUser2.wife.name += '=='
+        // delete proxyUser2.wife.name
+
+        // ======================
+        // const proxyUser3 = shallowReadonly({
+        //         name: '小明',
+        //         age: 18,
+        //         wife: {
+        //             name: '小红',
+        //             age: 17
+        //         }
+        //     })
+        // console.log(proxyUser3.name);
+        // proxyUser3.name = '小李'
+        // delete proxyUser3.age
+        // 浅劫持，只能读取
+        // console.log(proxyUser3.wife.name);
+        // proxyUser3.wife.name = '小芳'
+        // delete proxyUser3.wife.name
+        // const proxyUser4 = readonly({
+        //         name: '小明',
+        //         age: 18,
+        //         cars: ['奔驰', '宝马']
+        //     })
+        // console.log(proxyUser4.cars[0]);
+        // proxyUser4.cars[0] = '兰博基尼'
+        // proxyUser4.cars.splice(0, 1)
+
+
+        // ======================
+        // const proxyUser5 = shallowRef({
+        //         name: '小明',
+        //         age: 18,
+        //         cars: ['奔驰', '宝马']
+        //     })
+        // console.log(proxyUser5.value);
+
+        // proxyUser5.value = '小李'
+        // 劫持不到修改数据
+        // proxyUser5.value.cars[0] = '兰博基尼'
+        // const proxyUser6 = ref({
+        //         name: '小明',
+        //         age: 18,
+        //         cars: ['奔驰', '宝马']
+        //     })
+        // console.log(proxyUser6.value);
+        // console.log(proxyUser6.value.cars);
+        // proxyUser6.value.name = '小李'
+        // 可以劫持到修改数据
+        // proxyUser6.value.cars[0] = '兰博基尼'
+
+        // ======================
+        console.log(isRef(ref({})));
+        console.log(isReactive(reactive({})));
+        console.log(isReadonly(readonly({})));
+        console.log(isProxy(readonly({})));
+        console.log(isProxy(reactive({})));
+    </script>
+</body>
+
+</html>
