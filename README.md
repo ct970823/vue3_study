@@ -48,7 +48,7 @@
    - `destroyed` -> `onUnmounted`
    - `errorCaptured` -> `onErrorCaptured`
 
-2. 图示
+2. ##### 图示
 
    - Vue2
 
