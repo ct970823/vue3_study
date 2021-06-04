@@ -48,6 +48,18 @@
    - `destroyed` -> `onUnmounted`
    - `errorCaptured` -> `onErrorCaptured`
 
+2. 图示
+
+   - Vue2
+
+     ![Vue2 实例生命周期](https://cn.vuejs.org/images/lifecycle.png)
+
+   - Vue3
+
+     ![vue3实例的生命周期](https://v3.cn.vuejs.org/images/lifecycle.svg)
+
+     
+
 #### 创建项目
 
 1. ##### 使用vue-cli创建 https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create
