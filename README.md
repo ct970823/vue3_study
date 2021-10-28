@@ -877,7 +877,7 @@
       ```
 
 ## 生命周期
-   ![Vue2 实例生命周期](../vue_basic/生命周期.png)
+    ![Vue2 实例生命周期](https://images.gitee.com/uploads/images/2021/1028/161514_e521a191_1133983.png "生命周期.png")
    1. 又名：生命周期回调函数、生命周期函数、生命周期钩子。
    2. 是什么：Vue在关键时刻帮我们调用的一些特殊名称的函数。
    3. 生命周期函数的名字不可更改，但函数的具体内容是程序员根据需求编写的。
@@ -2146,7 +2146,7 @@ module.exports = {
 ### 图示
 
   - Vue2
-    ![Vue2 实例生命周期](./vue2复习/vue_basic/生命周期.png)
+    ![Vue2 实例生命周期](https://images.gitee.com/uploads/images/2021/1028/161514_e521a191_1133983.png "生命周期.png")
     <!-- ![Vue2 实例生命周期](https://cn.vuejs.org/images/lifecycle.png) -->
 
   - Vue3
