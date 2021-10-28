@@ -121,7 +121,7 @@ export default defineComponent({
     const state = reactive({
       orderList: [],
     });
-    const pageNum = ref(1);
+    const pageNum = (0, ref)(1);
     const pageSize = ref(10);
     const total = ref(0);
     const loadingMoreStatus = ref(false);
